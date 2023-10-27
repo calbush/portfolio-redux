@@ -141,14 +141,12 @@ body {
 .li-button {
     width: 100%;
     transition: opacity 0.3s;
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .li-button:hover {
     opacity: 1;
-}
-
-.li-button:hover ~ .li-button {
-    opacity: 0.5;
 }
 
 .word {
@@ -246,5 +244,9 @@ body {
     .links {
         align-self: center;
         justify-self: center;
+    }
+
+    .li-button {
+        opacity: 1;
     }
   }
