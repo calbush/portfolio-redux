@@ -72,7 +72,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 100vh;
     background: rgb(28,35,64);
     background: linear-gradient(0deg, rgba(28,35,64,1) 0%, rgba(0,0,0,1) 100%);
     color: var(--font-color);
@@ -94,7 +93,6 @@ body {
     padding: 40px 60px 60px 60px;
     align-items: start;
     justify-content: space-between;
-    height: 100%;
 }
 
 .intro {
@@ -140,13 +138,12 @@ body {
 
 .li-button {
     width: 100%;
-    transition: opacity 0.3s;
-    opacity: 0.5;
     cursor: pointer;
+    transition: opacity 0.3s;
 }
 
-.li-button:hover {
-    opacity: 1;
+.lower-opacity {
+    opacity: 0.3;
 }
 
 .word {
@@ -226,6 +223,7 @@ body {
     }
 
     .section {
+        height: 100vh;
         padding: 30px 10px 10px 10px;
         grid-template-columns: 320px;
         grid-template-rows: 2fr 1fr 25px;
