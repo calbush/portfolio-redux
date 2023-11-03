@@ -80,6 +80,7 @@ body {
     background: rgb(28,35,64);
     background: linear-gradient(0deg, rgba(28,35,64,1) 0%, rgba(0,0,0,1) 100%);
     color: var(--font-color);
+    overflow: hidden;
 }
 
 .header {
@@ -113,7 +114,7 @@ body {
 }
 
 .links {
-    font-size: larger;
+    font-size: x-large;
     display: grid;
     row-gap: 20px;
     font-family: josefin-sans;
@@ -246,6 +247,7 @@ body {
     font-family: josefin-sans-light;
     max-width: 800px;
     font-weight: bolder;
+    font-size: large;
 }
 
 .modal-title {
@@ -312,8 +314,8 @@ body {
   }
 
   @keyframes animatebottom {
-    from {bottom: -1000px; opacity: 0}
-    to {bottom: 0; opacity: 1}
+    from {transform: translateY(100%); opacity: 0;}
+    to {transform: translateY(0%); opacity: 1}
   }
 
 @media screen and (max-width: 767px) {
@@ -322,7 +324,7 @@ body {
     }
 
     .section {
-        height: 100vh;
+        height: 100%;
         padding: 70px 10px 10px 10px;
         grid-template-columns: 320px;
         grid-template-rows: 2fr 1fr 25px;
