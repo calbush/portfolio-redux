@@ -35,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    height: 100vh;
+    height: 100dvh;
 }
 ol, ul {
 	list-style: none;
@@ -54,11 +54,6 @@ table {
 }
 
 /* ^^^^^^^^^^^^^^^^^^^^^^ CSS RESET ^^^^^^^^^^^^^^^^^^^^^^^ */
-
-/* * {
-    outline: 1px solid purple;
-} */
-
 
 .no-style-button {
     all: unset;
