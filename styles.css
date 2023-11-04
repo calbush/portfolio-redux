@@ -54,7 +54,6 @@ table {
 }
 
 /* ^^^^^^^^^^^^^^^^^^^^^^ CSS RESET ^^^^^^^^^^^^^^^^^^^^^^^ */
-
 .no-style-button {
     all: unset;
 }
@@ -314,17 +313,16 @@ body {
   }
 
 @media screen and (max-width: 767px) {
+
     .letter {
         font-size:42px;
     }
 
     .section {
         height: 100%;
-        padding: 70px 10px 10px 25px;
-        grid-template-columns: 320px;
+        padding: 70px 10px 25px 10px;
+        grid-template-columns: 1fr;
         grid-template-rows: 2fr 1fr 25px;
-        align-self: center;
-        justify-self: center;
     }
 
     .github {
@@ -338,6 +336,7 @@ body {
     .links {
         align-self: center;
         justify-self: center;
+        font-size: larger;
     }
 
     .li-button {
